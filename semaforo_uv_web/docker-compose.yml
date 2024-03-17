@@ -1,0 +1,34 @@
+version: '3.9'
+services:
+  mysqldb:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: semaforo_uv
+      MYSQL_USER: desarrollo
+      MYSQL_PASSWORD: desarrollo
+    ports:
+      - "3307:3306"
+    networks:
+      - semaforo_network
+  semaforo_uv_backend:
+    build:
+      context: ./semaforo_uv_backend_grupo_a
+    depends_on:
+      - mysqldb
+    ports:
+      - "3000:3000"
+    networks:
+      - semaforo_network
+  semaforo_uv_frontend:
+    build:
+      context: ./semaforo_uv_frontend
+    ports:
+      - "8080:3000"
+    depends_on:
+      - semaforo_uv_backend
+    networks:
+      - semaforo_network
+networks:
+  semaforo_network:
+    driver: bridge

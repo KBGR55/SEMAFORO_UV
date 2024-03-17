@@ -1,0 +1,408 @@
+:root {
+  --azul: #0c2342;
+  --azul-secundario: #0d4f81;
+  --blanco: #FFF;
+  --gris: #eaeced;
+  --negro: #323232;
+  --naranja: #ffe6b1;
+  --naranja-oscuro: #f0ad4e;
+  --rojo: #de361c;
+  --verde: #36ab2b;
+}
+
+.background-radial-gradient {
+  background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%, var(--azul-secundario) 15%, var(--azul) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%),
+    radial-gradient(1250px circle at 100% 100%, var(--azul) 15%, var(--azul-secundario) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);
+}
+.mensaje-vacio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px; /* Altura opcional para centrar verticalmente */
+}
+
+.theme-ambiance {
+  background-color: #272822 !important;
+  /* Color de fondo del tema "ambiance" */
+  color: #ffffff !important;
+  border: none !important;
+  margin: 0 !important;
+  border-radius: 0% !important;
+  border-top: 1px solid #555 !important;
+  /* Borde superior de 1 píxel */
+}
+
+.metodo {
+  margin: 9px 12px;
+  font-size: 20px;
+}
+.container-mapa {
+  position: relative;
+  /* Asegúrate de que el contenedor tenga una posición relativa */
+}
+
+.zoom-buttons {
+  position: absolute;
+  top: 10px; /* Ajusta la posición vertical según necesites */
+  left: 10px; /* Ajusta la posición horizontal según necesites */
+  z-index: 1; 
+  border:none;/* Asegúrate de que los botones estén por encima de otros elementos */
+}
+.btn-mapa{
+ color: var(--blanco);
+ background-color: var(--azul);
+ width: 40px;
+ height: 40px;
+ border: 2px solid transparent !important;
+ box-shadow: 0 0 8px rgba(0, 0, 0, 0.3) !important;
+ border-radius: 5px;
+}
+.btn-mapa i:hover{
+color: var(--azul-secundario);
+}
+
+/* Estilos generales */
+.texto-primario {
+  color: var(--azul-secundario);
+  font-size: 16px;
+}
+.texto-primario-h2, .texto-primario-h3 ,.texto-primario-h4{
+  color: var(--azul-secundario);
+  font-weight: bold;
+  margin-left: 4px; 
+  padding-top: 20px; 
+}
+
+.texto-primario-h2 {
+  font-size: 33px;
+  text-align: left; 
+}
+
+.texto-primario-h3 {
+  font-size: 25px;
+  text-align: center; 
+}
+.texto-primario-h4 {
+  font-size: 20px;
+  text-align: left; 
+}
+
+
+.texto-subtitulo-1 {
+  color: var(--azul);
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+  border-left: 5px solid;
+  border-image: linear-gradient(to bottom, var(--azul), var(--azul-secundario)) 1;
+  padding-left: 20px;
+}
+
+.texto-primario a {
+  text-decoration: none;
+  color: var(--azul);
+}
+
+.fondo-gis {
+  background: var(--gris);
+}
+
+.container-tabla {
+  margin: 0 45px;
+}
+
+th {
+  background: var(--azul) !important;
+  color: var(--blanco) !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+td {
+  text-align: justify;
+  vertical-align: middle !important;
+}
+
+.card-header {
+  margin-top: 20px;
+  text-align: center;
+  border: none !important;
+}
+
+.input-field {
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid var(--azul);
+  color: var(--azul);
+}
+
+.input-field em {
+  font-size: 1em;
+  margin: 5px 15px;
+}
+
+.input-field:hover {
+  color: var(--azul-secundario);
+  border: 1px solid var(--azul-secundario);
+}
+
+input {
+  border: none;
+  color: var(--azul);
+}
+
+.boton {
+  background-color: var(--azul) !important;
+  color: var(--blanco) !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+/* Estilos para los íconos */
+.ico,
+.btn-estado,
+.btn-consola {
+  background-color: var(--blanco) !important;
+  border: 2px solid transparent !important;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 50% !important;
+  padding: 4px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden;
+}
+
+.ico {
+  width: 47.25px;
+  /* Ancho del botón */
+  height: 48px;
+  /* Alto del botón */
+}
+
+.btn-estado {
+  width: 30px;
+  /* Ancho del botón */
+  height: 30px;
+  /* Alto del botón */
+}
+
+.btn-consola {
+  width: 30px;
+  /* Ancho del botón */
+  height: 30px;
+  background-color: var(--negro) !important;
+  margin-right: 5px !important;
+}
+
+.btn-consola:hover {
+  color: var(--negro) !important;
+  background-color: var(--blanco) !important;
+}
+
+.btn-consola i {
+  height: 18px;
+}
+
+.btn-estado i {
+  width: 20px;
+  color: var(--azul) !important;
+}
+
+.ico img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.github {
+  background-color: var(--negro) !important;
+  padding: 10px !important;
+}
+
+.ico i {
+  font-size: 1.5rem;
+  color: var(--blanco);
+}
+
+/* Estilos para el header */
+header {
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  max-width: 75%;
+  text-align: center;
+  color: var(--negro);
+  text-align: justify;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: var(--azul);
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Estilos para los servicios */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 50px;
+  /* Agrega un espacio lateral */
+  margin-right: 50px;
+  /* Agrega un espacio lateral */
+}
+
+.service {
+  position: relative;
+  /* Posición relativa para que los íconos sean absolutos dentro de este div */
+  flex-basis: calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  /* Redondea las esquinas */
+}
+
+.service i {
+  position: absolute;
+  /* Posición absoluta */
+  top: -25px;
+  /* Ajusta la posición del ícono hacia arriba */
+  left: 50%;
+  /* Centra horizontalmente */
+  transform: translateX(-50%);
+  /* Centra horizontalmente */
+  background-color: var(--verde);
+  /* Color de fondo del círculo */
+  border-radius: 50%;
+  /* Hace que el ícono tenga forma circular */
+  padding: 15px;
+  /* Espaciado interno */
+  font-size: 2rem;
+  /* Tamaño del ícono */
+  color: white;
+  /* Color del ícono */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  /* Sombreado del círculo */
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--verde);
+}
+
+/* luchini */
+.service h4 {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: var(--negro);
+}
+
+.member {
+  width: 140px;
+  border-radius: 20px;
+  border: 5px solid var(--blanco);
+}
+
+.service p {
+  font-size: 1rem;
+  color: var(--negro);
+  text-align: justify;
+  /* Añade justificación al texto */
+}
+
+/* Estilos para el encabezado */
+.navbar-fondo,
+.nav-item .dropdown-menu,
+.offcanvas-header,
+.offcanvas-body {
+  background-color: var(--azul);
+  color: var(--blanco) !important;
+}
+
+/* Estilos para las letras del navbar */
+.navbar .navbar-brand,
+.navbar-nav .nav-link {
+  color: var(--blanco);
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-size: 20px;
+}
+
+.nav-item .dropdown-menu {
+  border: none;
+}
+
+.navbar .navbar-brand:hover,
+.nav-item .dropdown-menu .dropdown-item:hover,
+.navbar-nav .nav-link:hover {
+  background-color: var(--azul);
+  color: var(--azul);
+}
+
+/* Estilos para los iconos Font Awesome */
+.navbar .navbar-toggler {
+  color: var(--blanco) !important;
+  cursor: pointer !important;
+}
+
+.btn-close {
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23ffffff%27%3e%3cpath d=%27M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z%27/%3e%3c/svg%3e") !important;
+  border: 2px solid var(--blanco);
+}
+
+input {
+  border: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .header-content img {
+    width: 40vh;
+    margin-bottom: 30px;
+  }
+
+  .container-tabla {
+    font-size: 10px;
+  }
+
+  .modal-content {
+    width: 30vh;
+    margin-bottom: 30px;
+  }
+}

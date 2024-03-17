@@ -1,0 +1,10 @@
+{
+  "development": {
+      "username": "desarrollo",
+      "password": "desarrollo",
+      "database": "semaforo_uv",
+      "host": "mysqldb", 
+      "dialect": "mysql",
+      "operatorAliases": false
+  }
+}

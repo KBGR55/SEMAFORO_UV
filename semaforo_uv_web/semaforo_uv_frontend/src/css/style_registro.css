@@ -1,0 +1,69 @@
+.card.bg-glass {
+  width: 100%; /* Puedes ajustar el ancho según tus necesidades */
+  height: 630px; /* Puedes ajustar la altura según tus necesidades */
+  /* Otros estilos existentes para el div */
+
+}
+
+.col-lg-7.mb-lg-0.position-relative {
+  width: 100%; /* Ajusta el ancho al 100% para ocupar el espacio disponible */
+  height: 400px; /* Puedes ajustar la altura según tus necesidades */
+  /* Otros estilos existentes para el div */
+
+}
+
+.col-lg-5.mb-5.mb-lg-0 {
+  margin-top: 20px; /* Ajusta el margen superior para separar del div anterior */
+
+}
+
+
+.col-lg-5.mb-5.mb-lg-0 {
+  margin-top: 20px; /* Ajusta el margen superior para separar del div anterior */
+}
+
+.input-field {
+  border-radius: 5px;
+  padding: 10px; /* Ajusta el espaciado interno para mayor comodidad */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid var(--azul);
+  color: var(--azul);
+  margin-bottom: 15px; /* Ajusta el margen inferior para separar los inputs */
+}
+
+.input-field em {
+  font-size: 1.5em; /* Ajusta el tamaño del ícono */
+  margin: 5px 15px;
+}
+
+.input-field:hover {
+  color: var(--azul-secundario);
+  border: 1px solid var(--azul-secundario);
+}
+
+input {
+  border: none;
+  color: var(--azul);
+  width: 100%; /* Ajusta el ancho del input al 100% */
+  padding: 120px; /* Ajusta el espaciado interno del input */
+}
+
+.boton {
+  background-color: var(--azul) !important;
+  color: var(--blanco) !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  width: 100%;
+  margin-bottom: 20px; /* Ajusta el margen inferior para separar el botón */
+}
+
+@media screen and (max-width: 768px) {
+  .input-field {
+    margin-bottom: 10px; /* Ajusta el margen inferior para separar los inputs en dispositivos móviles */
+  }
+  .boton {
+    margin-bottom: 20px; /* Ajusta el margen inferior para separar el botón en dispositivos móviles */
+  }
+}
