@@ -10,6 +10,11 @@ Semáforo UV es un proyecto integrador de saberes desarrollado como parte del se
 
 > semaforo_uv_web
 
+<div align="center">
+  <a href="https://postimg.cc/dDqTDNT9" target="_blank"><img src="https://i.postimg.cc/RCt1sjS2/WEB.png" alt="WEB.png"></a>
+</div>
+
+
 1. **Instalación de dependencias:**
 
    Para comenzar, instala las dependencias escribiendo `npm i` en la terminal de las siguientes carpetas:
@@ -49,6 +54,10 @@ Semáforo UV es un proyecto integrador de saberes desarrollado como parte del se
 
 #### MÓVIL
 > semaforo_uv_frontend_movil
+
+<div align="center">
+  <a href="https://postimg.cc/w3Rq20x5" target="_blank"><img src="https://i.postimg.cc/G3q4c5Zf/Movil.png" alt="Movil.png"></a>
+</div>
 
 1. **Precondiciones:**
    
